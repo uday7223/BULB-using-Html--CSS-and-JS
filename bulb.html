@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BULB</title>
+  <link rel="stylesheet" href="./bulb.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="bulb" id="bulb"></div>
+  <div class="btn">  <button onclick="turnOnBulb()">Tap</button>
+</div>
+  <script>
+    var isOn = false;
+
+    function turnOnBulb() {
+      var bulb = document.getElementById('bulb');
+      if (isOn) {
+        bulb.style.backgroundColor = 'lightgoldenrodyellow';
+        bulb.style.boxShadow = 'none';
+
+
+      } else {
+        bulb.style.backgroundColor = 'yellow';
+        bulb.style.boxShadow = '0px 0px 150px 5px yellow';
+      }
+      isOn = !isOn;
+    }
+  </script>
+</body>
+</html>
